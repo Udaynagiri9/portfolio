@@ -1,0 +1,40 @@
+# Uday Nagiri — Portfolio & Professional Profile
+
+> Full Stack Developer • Creative Designer • Cinematic Video Editor • Digital Marketer
+
+## Overview
+- **Name:** Nagiri Uday (Uday Nagiri)
+- **Role:** Full Stack Developer, Video Editor & Creative Art Director
+- **Email:** bgmsuday@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/uday-nagiri-5205a22a1
+- **GitHub:** https://github.com/Udaynagiri9
+- **Instagram / Creative Lab:** https://www.instagram.com/chroma__canvas
+- **Portfolio Website:** https://udaynagiri9.github.io/portfolio/
+
+## Core Specializations
+
+### 1. Full Stack Software Development
+- **Frontend:** React.js, TypeScript, JavaScript (ES6+), Vite, Tailwind CSS, Framer Motion, HTML5, Vanilla CSS
+- **Backend & APIs:** Node.js, Express.js, RESTful APIs, JWT Authentication, MVC architecture
+- **Databases:** MongoDB, Mongoose, NoSQL
+- **Key Projects:**
+  - **AI Smart City Companion Platform:** Full stack civic discovery and issue tracking web app built with React, Node.js, Express, MongoDB, and Leaflet routing.
+  - **Kinetic Editorial Portfolio:** High-performance responsive web application built with React, TypeScript, Tailwind CSS, and Framer Motion.
+
+### 2. Motion Pictures & Cinematic Video Editing
+- **Focus:** Narrative cinematic cuts, speed ramping, color grading, pacing, sound design, and viral short-form content.
+- **Formats:** 4K Anamorphic cinematic edits and vertical 9:16 reels/shorts optimized for high retention on Instagram and YouTube.
+- **Tools & Workflows:** Premiere Pro, DaVinci Resolve, CapCut Pro, After Effects, Beat Sync, Color Science.
+
+### 3. Art Direction & Visual Design
+- **Focus:** Typography, brutalist and minimalist poster design, social media creative systems, brand identities, and photography.
+- **Projects & Platforms:** Creator behind @chroma__canvas, producing educational carousels, aesthetic grids, and visual design assets.
+- **Tools:** Canva Pro, Figma, Adobe Photoshop, Lightroom, Illustrator.
+
+### 4. Digital Marketing & Content Strategy
+- **Capabilities:** Organic audience growth, hook optimization, community engagement, brand positioning, and content architecture.
+
+## Contact & Hire
+For freelance projects, full-stack engineering roles, video editing commissions, and design collaborations:
+- **Email:** bgmsuday@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/uday-nagiri-5205a22a1
