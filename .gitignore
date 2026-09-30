@@ -30,6 +30,11 @@ dist-ssr
 .env.test.local
 .env.production.local
 
-# Raw source assets (already prepared in public/)
-videos/
-INFO/
+# Raw source assets at project root (the active web files are inside public/)
+/videos/
+/INFO/
+
+# Explicitly ensure public assets are tracked
+!public/videos/
+!public/designs/
+!public/certificates/
