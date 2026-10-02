@@ -5,7 +5,8 @@ import {
   DesignProject, 
   MarketingCampaign, 
   ProcessStep, 
-  SkillGroup 
+  SkillGroup,
+  DevProject 
 } from '../types';
 
 export const PERSONAL_INFO = {
@@ -115,22 +116,22 @@ export const SERVICES_DATA: Service[] = [
 
 export const SELECTED_WORK: Project[] = [
   {
-    id: 'ai-smart-city-companion',
+    id: 'ai-security-scanner',
     number: '01',
-    title: 'AI SMART CITY COMPANION',
-    subtitle: 'Real-Time Civic Discovery, Geo-Location & AI Recommendations Platform',
+    title: 'AI-SECURITY-SCANNER',
+    subtitle: 'Autonomous Vulnerability Detection & Code Security Audit Platform',
     category: 'Full Stack',
-    year: '2024',
-    description: 'A scalable Smart City digital platform enabling real-time service discovery, AI-driven recommendations, civic issue tracking, and event booking management. Designed with role-based authentication and analytics dashboard for city administrators.',
-    heroImage: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1400&q=85',
-    tools: ['MERN Stack', 'Node.js', 'Express', 'React.js', 'MongoDB', 'AI Integration', 'REST APIs'],
-    liveUrl: 'https://github.com/Udaynagiri9',
-    githubUrl: 'https://github.com/Udaynagiri9',
+    year: '2025',
+    description: 'An intelligent cybersecurity and automated code vulnerability scanner engineered with Next.js, Prisma ORM, and Docker. Detects security loopholes, evaluates threat level telemetry, and provides automated remediation guidance.',
+    heroImage: '/ai-security-scanner.jpg',
+    tools: ['Next.js', 'TypeScript', 'Prisma ORM', 'Docker', 'Tailwind CSS', 'REST APIs', 'Security AI'],
+    liveUrl: 'https://github.com/Udaynagiri9/AI-Security-Scanner',
+    githubUrl: 'https://github.com/Udaynagiri9/AI-Security-Scanner',
     featured: true,
-    problem: 'Urban residents lack a unified platform to discover local civic services in real-time, report municipal issues, and book civic amenities efficiently.',
-    solution: 'Engineered a full-stack MERN application incorporating geo-location tracking, automated AI triage recommendations, and role-based administrative dashboards.',
-    role: 'Full Stack Developer & System Architect',
-    outcome: 'Seamless end-to-end civic issue routing with instant status updates and centralized city administration.',
+    problem: 'Modern software teams struggle to identify critical vulnerabilities, misconfigurations, and dependency threats before production deployment.',
+    solution: 'Engineered an automated full-stack AI security scanner with real-time AST code inspection, threat radar telemetry, and Prisma database persistence.',
+    role: 'Cybersecurity & Full Stack Engineer',
+    outcome: 'Real-time vulnerability detection, threat triage alerts, Docker containerized infrastructure, and robust Prisma database modeling.',
   },
   {
     id: 'chroma-canvas-identity',
@@ -149,21 +150,109 @@ export const SELECTED_WORK: Project[] = [
     role: 'Creative Director & Visual Designer',
     outcome: 'Built a curated social presence with high organic engagement and ongoing client creative inquiries.',
   },
+  {
+    id: 'hirelens-ai-platform',
+    number: '03',
+    title: 'HIRELENS AI PLATFORM',
+    subtitle: "Recruiter's Perspective Resume Analytics, ATS Scoring & Verification",
+    category: 'Full Stack',
+    year: '2025',
+    description: "An AI-powered resume and career platform analyzing CVs through a recruiter's lens with automated ATS scoring, resume verification, interview prep, client-side PDF generation, and milestone micro-interactions.",
+    heroImage: '/hirelens-preview.png',
+    tools: ['React 19', 'TypeScript', 'Tailwind CSS v4', 'Vite', 'React Context API', 'jsPDF', 'html2canvas', 'Oxlint'],
+    liveUrl: 'https://hirelens-liart.vercel.app/',
+    githubUrl: 'https://github.com/Udaynagiri9/hireLens',
+    featured: true,
+    problem: 'Job seekers lack objective insights into how automated ATS systems and hiring managers evaluate their resumes.',
+    solution: "Engineered a reactive React 19 web application providing real-time ATS scoring, recruiter-perspective critiques, client-side PDF/canvas export, and milestone celebrations.",
+    role: 'Frontend Architect & Developer',
+    outcome: 'Instant client-side PDF resume exports, recruiter-calibrated ATS analysis, and sub-second hot reload performance.',
+  },
 ];
 
-export const DEV_PROJECTS = [
+export const DEV_PROJECTS: DevProject[] = [
   {
-    id: 'smart-city-mern',
-    title: 'AI Smart City Companion Platform',
-    category: 'Full Stack MERN',
-    problem: 'Residents need a centralized hub for real-time civic service discovery, geo-location routing, and civic issue resolution.',
-    solution: 'Developed full stack MERN web application with role-based JWT auth, real-time ticket tracking, and admin analytics.',
-    technology: ['React.js', 'Node.js', 'Express', 'MongoDB', 'REST APIs', 'Tailwind CSS'],
-    role: 'Full Stack Developer',
-    outcome: 'Successfully tested with real-time issue dispatch and multi-role administrator access.',
-    github: 'https://github.com/Udaynagiri9',
-    live: 'https://github.com/Udaynagiri9',
-    image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=80',
+    id: 'hirelens',
+    title: 'HireLens — AI-Powered Resume & Career Platform',
+    category: 'React 19 & Architecture',
+    problem:
+      'Job seekers struggle to understand how ATS parsers and recruiters evaluate resumes, lacking real-time recruiter-perspective feedback, ATS scoring benchmarks, and reliable client-side PDF export.',
+    solution:
+      'Engineered an AI-powered resume and career platform that analyzes resumes from a recruiter perspective with ATS scoring, resume verification, interview prep, client-side PDF/canvas generation, and milestone celebrations.',
+    technology: [
+      'React 19 (v19.2.8)',
+      'TypeScript (v6.0)',
+      'Vite (v8.2)',
+      'Tailwind CSS v4',
+      'Lucide React',
+      'React Context API',
+      'jsPDF (v4.2)',
+      'html2canvas (v1.4)',
+      'canvas-confetti',
+      'Oxlint (v1.75)',
+    ],
+    techCategories: [
+      {
+        label: 'Core & Build',
+        stack: 'React 19 (react v19.2.8) • TypeScript (typescript v6.0) • Vite (vite v8.2)',
+      },
+      {
+        label: 'Styling & UI',
+        stack: 'Tailwind CSS v4 (tailwindcss v4.3 & @tailwindcss/vite) • Lucide React',
+      },
+      {
+        label: 'State Management',
+        stack: 'React Context API (AuthProvider, ResumeProvider, ToastContext)',
+      },
+      {
+        label: 'Document Generation',
+        stack: 'jsPDF (jspdf v4.2 client-side PDF export) • html2canvas (v1.4 preview & canvas rendering)',
+      },
+      {
+        label: 'Animation & Linting',
+        stack: 'canvas-confetti (v1.9 milestone celebrations) • Oxlint (v1.75 high-performance JS/TS linter)',
+      },
+    ],
+    role: 'Frontend Architect & Developer',
+    outcome:
+      'Recruiter-calibrated ATS scoring, high-fidelity client-side PDF document generation, resilient Context state architecture, and instant Vite hot reloads.',
+    github: 'https://github.com/Udaynagiri9/hireLens',
+    live: 'https://hirelens-liart.vercel.app/',
+    image: '/hirelens-preview.png',
+  },
+  {
+    id: 'ai-security-scanner',
+    title: 'AI-Security-Scanner Platform',
+    category: 'Full Stack & Cybersecurity',
+    problem:
+      'Developers face blind spots with code vulnerabilities, dependency exploits, and security posture auditing during continuous delivery.',
+    solution:
+      'Constructed an automated AI security scanner leveraging Next.js, TypeScript, Docker Compose, and Prisma ORM for deep static and dynamic vulnerability analysis.',
+    technology: ['Next.js', 'TypeScript', 'Prisma ORM', 'Docker', 'Tailwind CSS', 'PostgreSQL', 'REST APIs'],
+    techCategories: [
+      {
+        label: 'Full Stack & Core',
+        stack: 'Next.js • TypeScript • Node.js',
+      },
+      {
+        label: 'Database & ORM',
+        stack: 'Prisma ORM • PostgreSQL / SQLite modeling',
+      },
+      {
+        label: 'DevOps & Container',
+        stack: 'Docker • Docker Compose containerization',
+      },
+      {
+        label: 'UI & Security Engine',
+        stack: 'Tailwind CSS • Automated Heuristics & Threat Telemetry',
+      },
+    ],
+    role: 'Security Engineer & Full Stack Developer',
+    outcome:
+      'Containerized vulnerability scanning, automated threat audit logs, and persistent Prisma database schema.',
+    github: 'https://github.com/Udaynagiri9/AI-Security-Scanner',
+    live: 'https://github.com/Udaynagiri9/AI-Security-Scanner',
+    image: '/ai-security-scanner.jpg',
   },
   {
     id: 'personal-portfolio-next',

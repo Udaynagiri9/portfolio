@@ -25,6 +25,26 @@ export interface Project {
   outcome?: string;
 }
 
+export interface DevTechCategory {
+  label: string;
+  stack: string;
+}
+
+export interface DevProject {
+  id: string;
+  title: string;
+  category: string;
+  problem: string;
+  solution: string;
+  technology: string[];
+  techCategories?: DevTechCategory[];
+  role: string;
+  outcome: string;
+  github: string;
+  live: string;
+  image: string;
+}
+
 export interface Service {
   number: string;
   title: string;

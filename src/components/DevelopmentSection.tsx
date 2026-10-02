@@ -8,15 +8,15 @@ export const DevelopmentSection: React.FC = () => {
   const { setCursor, resetCursor } = useCursor();
 
   const devStack = [
-    { name: 'Next.js & React', icon: '01' },
-    { name: 'JavaScript (ES6+)', icon: '02' },
-    { name: 'Python', icon: '03' },
+    { name: 'React 19 & Next.js', icon: '01' },
+    { name: 'TypeScript & JS', icon: '02' },
+    { name: 'Tailwind CSS v4', icon: '03' },
     { name: 'Node.js & Express', icon: '04' },
-    { name: 'MongoDB', icon: '05' },
-    { name: 'MySQL', icon: '06' },
-    { name: 'C & C++', icon: '07' },
-    { name: 'Tailwind CSS', icon: '08' },
-    { name: 'REST APIs', icon: '09' },
+    { name: 'Python', icon: '05' },
+    { name: 'MongoDB', icon: '06' },
+    { name: 'MySQL', icon: '07' },
+    { name: 'REST APIs', icon: '08' },
+    { name: 'Vite & Oxlint', icon: '09' },
     { name: 'Git & GitHub', icon: '10' },
   ];
 
@@ -137,6 +137,31 @@ export const DevelopmentSection: React.FC = () => {
                     </div>
                   </div>
 
+                  {/* Categorized Architecture Breakdown (HireLens & detailed projects) */}
+                  {proj.techCategories && proj.techCategories.length > 0 && (
+                    <div className="p-4 rounded-2xl bg-zinc-950/80 border border-white/10 space-y-2.5">
+                      <div className="flex items-center space-x-2 text-[11px] font-mono uppercase tracking-widest text-sky-400">
+                        <Layers size={13} />
+                        <span>Architecture & Tech Stack Breakdown</span>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 text-xs">
+                        {proj.techCategories.map((cat, cIdx) => (
+                          <div
+                            key={cIdx}
+                            className="p-2.5 rounded-xl bg-white/[0.03] border border-white/5 space-y-1"
+                          >
+                            <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-wider block">
+                              {cat.label}
+                            </span>
+                            <p className="text-zinc-200 font-mono text-[11px] leading-relaxed">
+                              {cat.stack}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
                   {/* Tech Stack Pills & Actions */}
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-1">
                     <div className="flex flex-wrap gap-1.5">
@@ -150,7 +175,7 @@ export const DevelopmentSection: React.FC = () => {
                       ))}
                     </div>
 
-                    <div className="flex items-center space-x-3 pt-2 sm:pt-0">
+                    <div className="flex flex-wrap items-center gap-2 pt-2 sm:pt-0">
                       <a
                         href={proj.live}
                         target="_blank"
