@@ -36,14 +36,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          scrolled
-            ? 'py-3.5 bg-[#070708]/75 backdrop-blur-xl border-b border-white/[0.08] shadow-2xl'
-            : 'py-5 sm:py-6 bg-transparent'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
+      <header className="fixed top-0 inset-x-0 z-50 pointer-events-none transition-all duration-500 py-3 sm:py-5 px-3 sm:px-6 md:px-8 flex justify-center">
+        <div
+          className={`w-full max-w-7xl mx-auto px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl sm:rounded-full pointer-events-auto flex items-center justify-between transition-all duration-500 ${
+            scrolled
+              ? 'bg-[#08090d]/85 backdrop-blur-2xl border border-white/10 shadow-[0_16px_40px_-10px_rgba(0,0,0,0.8),0_0_20px_rgba(56,189,248,0.06)]'
+              : 'bg-[#08090d]/40 backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.35)]'
+          }`}
+        >
           {/* Logo / Name */}
           <a
             href="#"
