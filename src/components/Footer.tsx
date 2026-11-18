@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-zinc-800">
           {/* Left Column: Brand & Title */}
           <div className="md:col-span-6 space-y-4">
-            <h3 className="font-display font-black text-3xl sm:text-4xl tracking-tight text-white">
+            <h3 className="font-alro font-bold text-3xl sm:text-4xl tracking-tight text-white">
               {PERSONAL_INFO.name}
             </h3>
             <p className="text-zinc-400 font-mono text-xs uppercase tracking-widest leading-relaxed">

@@ -20,7 +20,7 @@ const CERTIFICATES: Certificate[] = [
     title: 'AWS Cloud Developing',
     issuer: 'Amazon Web Services (AWS Academy)',
     category: 'Cloud',
-    categoryColor: 'from-amber-400 to-orange-500',
+    categoryColor: 'from-sky-400 to-cyan-500',
     icon: <Shield size={20} />,
     file: '/certificates/AWS_Academy_Graduate___Cloud_Developing___Training_Badge_Badge20260921-21-dqlanl.pdf',
     year: '2026',
@@ -31,7 +31,7 @@ const CERTIFICATES: Certificate[] = [
     title: 'AWS Cloud Security Foundations',
     issuer: 'Amazon Web Services (AWS Academy)',
     category: 'Cloud',
-    categoryColor: 'from-amber-400 to-orange-500',
+    categoryColor: 'from-sky-400 to-cyan-500',
     icon: <Shield size={20} />,
     file: '/certificates/AWS_Academy_Graduate___Cloud_Security_Foundations___Training_Badge_Badge20260921-21-f5v4ix.pdf',
     year: '2026',
@@ -42,7 +42,7 @@ const CERTIFICATES: Certificate[] = [
     title: 'EDX Professional Certificate',
     issuer: 'edX',
     category: 'Development',
-    categoryColor: 'from-sky-400 to-blue-600',
+    categoryColor: 'from-sky-400 to-cyan-500',
     icon: <Code2 size={20} />,
     file: '/certificates/EDX UDAY.pdf',
     year: '2025',
@@ -52,7 +52,7 @@ const CERTIFICATES: Certificate[] = [
     title: 'Exploring Networking with Cisco Packet Tracer',
     issuer: 'Cisco Networking Academy',
     category: 'Networking',
-    categoryColor: 'from-blue-400 to-indigo-600',
+    categoryColor: 'from-sky-400 to-cyan-500',
     icon: <Network size={20} />,
     file: '/certificates/Exploring_Networking_with_Cisco_Packet_Tracer_certificate_udaybgms45-gmail-com_949f45b1-cc50-4da0-a887-dedea5c46b2e.pdf',
     year: '2025',
@@ -62,7 +62,7 @@ const CERTIFICATES: Certificate[] = [
     title: 'Getting Started with Cisco Packet Tracer',
     issuer: 'Cisco Networking Academy',
     category: 'Networking',
-    categoryColor: 'from-blue-400 to-indigo-600',
+    categoryColor: 'from-sky-400 to-cyan-500',
     icon: <Network size={20} />,
     file: '/certificates/Getting_Started_with_Cisco_Packet_Tracer_certificate_udaybgms45-gmail-com_de7d1879-586a-4778-bc74-daabd7a92d1e.pdf',
     year: '2025',
@@ -72,7 +72,7 @@ const CERTIFICATES: Certificate[] = [
     title: 'Introduction to Cybersecurity',
     issuer: 'Cisco Networking Academy',
     category: 'Cybersecurity',
-    categoryColor: 'from-emerald-400 to-teal-600',
+    categoryColor: 'from-sky-400 to-cyan-500',
     icon: <Shield size={20} />,
     file: '/certificates/Introduction_to_Cybersecurity_certificate_udaybgms45-gmail-com_5dc91ac1-1595-40c5-8d15-fb9f62eb03a1.pdf',
     year: '2025',
@@ -82,7 +82,7 @@ const CERTIFICATES: Certificate[] = [
     title: 'Junior Cybersecurity Analyst Career Path',
     issuer: 'Cisco Networking Academy',
     category: 'Cybersecurity',
-    categoryColor: 'from-emerald-400 to-teal-600',
+    categoryColor: 'from-sky-400 to-cyan-500',
     icon: <Shield size={20} />,
     file: '/certificates/Junior_Cybersecurity_Analyst_Career_Path_certificate_udaybgms45-gmail-com_bfb5fde1-4d99-473c-8d75-575a859b67ff (1).pdf',
     year: '2025',
@@ -92,7 +92,7 @@ const CERTIFICATES: Certificate[] = [
     title: 'Python Essentials 2',
     issuer: 'Cisco Networking Academy',
     category: 'Development',
-    categoryColor: 'from-sky-400 to-blue-600',
+    categoryColor: 'from-sky-400 to-cyan-500',
     icon: <Code2 size={20} />,
     file: '/certificates/Python_Essentials_2_certificate_udaybgms45-gmail-com_53221cd2-97db-40fe-9b77-d5a499ba1d00.pdf',
     year: '2025',
@@ -162,8 +162,8 @@ export const CertificatesSection: React.FC = () => {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase border transition-all duration-300 ${
                 activeCategory === cat
-                  ? 'bg-white text-black border-white'
-                  : 'bg-transparent text-zinc-400 border-zinc-700 hover:border-zinc-400 hover:text-white'
+                  ? 'bg-sky-400 text-black border-sky-400 font-bold shadow-lg shadow-sky-500/20'
+                  : 'bg-transparent text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
               }`}
             >
               {cat}
@@ -186,17 +186,17 @@ export const CertificatesSection: React.FC = () => {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3, delay: idx * 0.05 }}
                 onClick={() => openLightbox(idx)}
-                className="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-white/20 hover:bg-white/[0.06] cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/50 overflow-hidden"
+                className="group relative p-6 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-sky-500/40 hover:bg-white/[0.05] cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-sky-500/10 overflow-hidden"
               >
                 {/* Gradient top bar */}
-                <div className={`absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r ${cert.categoryColor} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Icon + category */}
                 <div className="flex items-start justify-between mb-5">
-                  <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${cert.categoryColor} flex items-center justify-center text-white shadow-lg`}>
+                  <div className="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-400/25 flex items-center justify-center text-sky-400 shadow-lg group-hover:bg-sky-400/20 group-hover:border-sky-400/50 group-hover:text-white group-hover:shadow-[0_0_20px_rgba(56,189,248,0.25)] transition-all duration-300">
                     {cert.icon}
                   </div>
-                  <span className={`text-[10px] font-mono uppercase tracking-widest px-2 py-1 rounded-full bg-gradient-to-r ${cert.categoryColor} text-white/90`}>
+                  <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded-full bg-sky-400/10 text-sky-400 border border-sky-400/25 group-hover:border-sky-400/40 group-hover:bg-sky-400/20 transition-all">
                     {cert.category}
                   </span>
                 </div>
@@ -207,21 +207,21 @@ export const CertificatesSection: React.FC = () => {
                 </h3>
 
                 {/* Issuer */}
-                <p className="text-xs text-zinc-500 font-light leading-relaxed mb-4">
+                <p className="text-xs text-zinc-400 font-light leading-relaxed mb-4">
                   {cert.issuer}
                 </p>
 
                 {cert.badge && (
                   <div className="flex items-center gap-1.5 mb-4">
-                    <Award size={11} className="text-amber-400" />
-                    <span className="text-[10px] text-amber-400/80 font-mono">{cert.badge}</span>
+                    <Award size={11} className="text-sky-400" />
+                    <span className="text-[10px] text-sky-400/90 font-mono">{cert.badge}</span>
                   </div>
                 )}
 
                 {/* Footer */}
                 <div className="flex items-center justify-between pt-4 border-t border-white/[0.06]">
-                  <span className="text-[10px] font-mono text-zinc-600">{cert.year}</span>
-                  <div className="flex items-center gap-1 text-zinc-600 group-hover:text-sky-400 transition-colors">
+                  <span className="text-[10px] font-mono text-zinc-500">{cert.year}</span>
+                  <div className="flex items-center gap-1 text-zinc-400 group-hover:text-sky-400 transition-colors">
                     <span className="text-[10px] font-mono">VIEW</span>
                     <ExternalLink size={11} />
                   </div>
@@ -262,7 +262,7 @@ export const CertificatesSection: React.FC = () => {
                   <a
                     href={filtered[lightboxIndex].file}
                     download
-                    className="px-4 py-2 bg-white text-black rounded-full text-xs font-mono font-bold tracking-wide hover:bg-zinc-200 transition-colors"
+                    className="px-4 py-2 bg-sky-400 text-black rounded-full text-xs font-mono font-bold tracking-wide hover:bg-white transition-colors shadow-lg shadow-sky-400/20"
                     onClick={(e) => e.stopPropagation()}
                   >
                     DOWNLOAD
@@ -310,7 +310,7 @@ export const CertificatesSection: React.FC = () => {
                     key={i}
                     onClick={() => setLightboxIndex(i)}
                     className={`rounded-full transition-all duration-200 ${
-                      i === lightboxIndex ? 'w-4 h-1.5 bg-white' : 'w-1.5 h-1.5 bg-white/30 hover:bg-white/60'
+                      i === lightboxIndex ? 'w-4 h-1.5 bg-sky-400' : 'w-1.5 h-1.5 bg-white/30 hover:bg-white/60'
                     }`}
                   />
                 ))}

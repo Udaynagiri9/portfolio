@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Alro';
+  src: url('/fonts/alro-alro-bold-700.otf') format('opentype'),
+       url('/fonts/alro-alro-bold-700.ttf') format('truetype');
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alro';
+  src: url('/fonts/alro-alro-regular-400.otf') format('opentype'),
+       url('/fonts/alro-alro-regular-400.ttf') format('truetype');
+  font-weight: 400 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   * {
     margin: 0;
@@ -63,6 +81,10 @@
 /* Editorial Typography */
 .font-display {
   font-family: 'Syne', sans-serif;
+}
+
+.font-alro {
+  font-family: 'Alro', 'Syne', sans-serif;
 }
 
 /* Advanced Glassmorphism Utilities */

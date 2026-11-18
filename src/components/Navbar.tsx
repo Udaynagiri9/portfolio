@@ -52,7 +52,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
             className="group flex flex-col tracking-tight"
           >
             <div className="flex items-center space-x-2">
-              <span className="font-display font-extrabold text-base sm:text-xl tracking-wider text-white group-hover:text-sky-400 transition-colors duration-300">
+              <span className="font-alro font-bold text-base sm:text-xl tracking-wider text-white group-hover:text-sky-400 transition-colors duration-300">
                 {PERSONAL_INFO.name}
               </span>
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />

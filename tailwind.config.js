@@ -21,6 +21,7 @@ export default {
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
         display: ['"Syne"', '"Cabinet Grotesk"', 'sans-serif'],
+        alro: ['"Alro"', '"Syne"', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       letterSpacing: {

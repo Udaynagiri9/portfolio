@@ -314,6 +314,17 @@ export const VIDEO_PROJECTS: VideoProject[] = [
     description: 'High-energy short-form social narrative showcasing kinetic flow, match cuts, and vibrant visual polish.',
     software: ['Shorts / Reels', 'Match Cuts', 'Color Polish', 'Pacing'],
   },
+  {
+    id: 'cinematic-edit-03',
+    title: 'TERRA CRAFT — THE ARTISAN WHEEL',
+    category: 'Cinematic Edits',
+    duration: '00:48',
+    thumbnail: '/videos/IMG_3197.mp4',
+    videoUrl: '/videos/IMG_3197.mp4',
+    clientOrBrand: 'Documentary Craft',
+    description: 'Cinematic documentary capture exploring the tactile rhythm of rural pottery, spinning wheel momentum, and rich earthen color science.',
+    software: ['Documentary Edit', 'Color Science', 'Sound Architecture', 'Pacing Mastery'],
+  },
 ];
 
 export const DESIGN_PROJECTS: DesignProject[] = [
@@ -406,6 +417,36 @@ export const DESIGN_PROJECTS: DesignProject[] = [
     description: 'High-definition study of light caustics and fluid surface turbulence creating dynamic organic geometry and refraction.',
     year: '2025',
     tools: ['Graphic Design', 'Macro Light Study', 'Fluid Dynamics'],
+  },
+  {
+    id: 'des-10',
+    title: 'Pulse of the Arena — Stage Horizon',
+    category: 'Visual Art',
+    aspectRatio: 'portrait',
+    image: '/designs/IMG_2157.jpg',
+    description: 'Atmospheric live stage capture highlighting dynamic truss lighting, neon ambience, and an immersive crowd recording the moment.',
+    year: '2026',
+    tools: ['Live Stage Visual', 'Atmospheric Lighting', 'Concert Photography'],
+  },
+  {
+    id: 'des-11',
+    title: 'Forge & Ember — The Artisan Blower',
+    category: 'Art Direction',
+    aspectRatio: 'portrait',
+    image: '/designs/IMG_3150.jpg',
+    description: 'Raw tactile study of blacksmith forge flames rising from charcoal ash alongside an antique mechanical blower, emphasizing grit and warm fire tones.',
+    year: '2026',
+    tools: ['Art Direction', 'Fire Study', 'Tactile Texture'],
+  },
+  {
+    id: 'des-12',
+    title: 'Kinetic Lens — Cinematographer Triptych',
+    category: 'Social Media Creative',
+    aspectRatio: 'portrait',
+    image: '/designs/IMG_3207.jpg',
+    description: 'Three-frame cinematic film strip documenting the behind-the-scenes journey of a creator framing perspectives with natural light and filmic grading.',
+    year: '2026',
+    tools: ['Film Strip Triptych', 'Behind The Scenes', 'Cinematic Grading'],
   },
 ];
 

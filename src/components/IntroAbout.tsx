@@ -13,7 +13,7 @@ export const IntroAbout: React.FC = () => {
       className="relative w-full py-24 sm:py-32 md:py-40 px-4 sm:px-6 md:px-12 bg-[#0c0d10] border-t border-zinc-900 overflow-hidden"
     >
       {/* Editorial Watermark */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 pointer-events-none select-none text-[18vw] font-display font-black text-white/[0.015] leading-none whitespace-nowrap">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 pointer-events-none select-none text-[18vw] font-alro font-bold text-white/[0.015] leading-none whitespace-nowrap">
         UDAY
       </div>
 

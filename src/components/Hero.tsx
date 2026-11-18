@@ -194,7 +194,7 @@ export const Hero: React.FC = () => {
             initial={{ y: 90, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-            className="font-display font-black hero-title text-white select-none"
+            className="font-alro font-bold hero-title text-white select-none"
             onMouseEnter={() => setCursor('open', 'UDAY')}
             onMouseLeave={resetCursor}
           >
